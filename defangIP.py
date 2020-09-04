@@ -19,4 +19,6 @@ Output: "255[.]100[.]50[.]0"
 class Solution:
     def defangIPaddr(self, address: str) -> str:
         return address.replace('.','[.]')
-        
+#Alternative version  
+''''def defangIPaddr(self, address: str) -> str:
+        return ''.join('[.]' if c == '.' else c for c in address)''''     
